@@ -6,11 +6,7 @@ def roll_call_dwarves(array)
   end 
 end
 
-roll_call_dwarves(dwarves)
-  
-end
 
-def summon_captain_planet# code an argument here
   def summon_captain_planet(array)
   new_array = []
   i = 0 
@@ -19,9 +15,6 @@ def summon_captain_planet# code an argument here
     i += 1 
   end 
   new_array
-end
-
-summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(array) 
@@ -34,7 +27,7 @@ def long_planeteer_calls(array)
   end 
 end
 
-long_planeteer_calls(call_screams)
+
 
 
 def find_the_cheese(array)
@@ -44,4 +37,3 @@ def find_the_cheese(array)
   end 
 end
 
-find_the_cheese(snacks)
