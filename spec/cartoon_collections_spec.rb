@@ -1,13 +1,12 @@
-require "spec_helper"
+dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+def roll_call_dwarves(array)
+  index = 0
+  array.each_with_index {|name, index| puts "#{index + 1}. #{name} "}
+end
 
-describe "Cartoon Collections" do
-  describe "#roll_call_dwarves" do
-    it "prints out the 7 dwarfs in a numbered list" do
-      dwarves = ["Dopey", "Grumpy", "Bashful"]
+roll_call_dwarves(dwarves)
 
-      output = capture_stdout do
-        roll_call_dwarves(dwarves)
-      end
 
       # This regex allows for arbitrary characters between
       # the numbering and the name
