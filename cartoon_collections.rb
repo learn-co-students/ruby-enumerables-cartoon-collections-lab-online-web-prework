@@ -1,7 +1,7 @@
 "../cartoon_collections"
 
 describe "cartoon collection"
-  describe 
+  describe ""
 
 
 def summon_captain_planet# code an argument here
