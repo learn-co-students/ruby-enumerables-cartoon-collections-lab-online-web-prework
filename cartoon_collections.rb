@@ -6,7 +6,7 @@ describe "cartoon collection"
       dwarves = ["dopey", "grumpy", "bashful"]
       
      output = capture_stdout
-     
+       roll_call_dwarves
 
 
 def summon_captain_planet# code an argument here
