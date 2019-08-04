@@ -5,7 +5,7 @@ describe "cartoon collection"
     it "prints out the 7 dwarfs in a numbered list"
       dwarves = ["dopey", "grumpy", "bashful"]
       
-     output 
+     output = 
 
 
 def summon_captain_planet# code an argument here
