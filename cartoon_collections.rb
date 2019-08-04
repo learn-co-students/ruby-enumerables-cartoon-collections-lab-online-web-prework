@@ -1,7 +1,7 @@
 "../cartoon_collections"
 
 describe "cartoon collection"
-  describe "#roll_"
+  describe "#roll_call_dwa"
 
 
 def summon_captain_planet# code an argument here
