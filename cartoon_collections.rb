@@ -3,7 +3,7 @@
 describe "cartoon collection"
   describe "#roll_call_dwarves"
     it "prints out the 7 dwarfs in a numbered list"
-      dwarves = ["dopey", "grump" ]
+      dwarves = ["dopey", "grumpy",  ]
 
 
 def summon_captain_planet# code an argument here
