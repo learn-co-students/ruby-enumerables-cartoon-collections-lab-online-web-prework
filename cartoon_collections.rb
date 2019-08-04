@@ -2,7 +2,7 @@
 
 describe "cartoon collection"
   describe "#roll_call_dwarves"
-    it "prints out the 7 dwarves  " 
+    it "prints out the 7 dwarfs   " 
 
 
 def summon_captain_planet# code an argument here
