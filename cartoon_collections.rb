@@ -1,6 +1,5 @@
 "../cartoon_collections"
-  # Your code here
-end
+describe 
 
 def summon_captain_planet# code an argument here
   # Your code here
