@@ -1,4 +1,4 @@
-".."
+"../cartoon_collections"
   # Your code here
 end
 
