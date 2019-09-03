@@ -17,11 +17,10 @@ end
 
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  array.each { |item| cheese_types.each { |cheese| return item if item == cheese  }  }
-  nil
+   cheese_types = ["cheddar", "gouda", "camembert"]
+  # array.each { |item| cheese_types.each { |cheese| return item if item == cheese  }  }
+  # nil
+  array.find { |item|
+    cheese_types.include?(item)
+  }
 end
-
-contains_cheddar = ["banana", "cheddar", "sock"]
-
-puts find_the_cheese(contains_cheddar)
