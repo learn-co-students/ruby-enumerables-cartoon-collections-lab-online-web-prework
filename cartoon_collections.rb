@@ -12,17 +12,22 @@ def summon_captain_planet(array)# define method with parameter
 
 end
 
-def long_planeteer_calls(array)
-  array.each do |characters|
-  if characters.length >= 4
-      return false
-    else true
-end
-array
+def long_planeteer_calls(array)# method with argument of an array
+        #array.any? {|element1|}#
+#           if element1.length >= 4}
+#             return true
+#         characters.any?{|characters| element.length <= 4}
+#             return false
+# end
+# end
+# characters
+
+#and then you'll want to create a new block parameter name inside:
+
+array.any? { |element|element.length > 4} #and then do your comparison here
 end
 
-
-#def find_the_cheese# code an argument here
+def find_the_cheese# code an argument here
   # the array below is here to help
-  #cheese_types = ["cheddar", "gouda", "camembert"]
-#end
+  cheese_types = ["cheddar", "gouda", "camembert"]
+end# .find .inculde?
