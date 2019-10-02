@@ -21,13 +21,20 @@ def long_planeteer_calls(array)# method with argument of an array
 # end
 # end
 # characters
-
 #and then you'll want to create a new block parameter name inside:
-
 array.any? { |element|element.length > 4} #and then do your comparison here
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-end# .find .inculde?
+def find_the_cheese (array) # define method and set argument
+    cheese_types = ["cheddar", "gouda", "camembert"] # array of elements returning cheese
+
+cheese_types.find{|cheese| array.include?(cheese)}
+
+   #array.map do |stuff| # created new array to run mapping of to pull each element in array
+      #cheese_types.find{|cheese|cheese == stuff} # asks block parameter is you find this put it
+      #into this block parameter to to tell either true or false if element looking for in new variable
+    #end
+
+end
+# .find .inculde?
+# string = variable
