@@ -11,20 +11,25 @@ planeteer_calls.collect {|element| "#{element.capitalize}!"}
 end
 
 def long_planeteer_calls(words)
+
   words.map do |word| 
     if word.size > 4 
       return true 
-    else 
-      return false 
     end
+    
   end
+  return false
   
-  # Your code here
 end
 
-def find_the_cheese(cheese)
+def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  cheese.include?(cheese_types)
+  cheese_types.each do |cheese|
+    if array.include?(cheese)
+      return cheese
+    end
+  end
+  return nil
 end
