@@ -3,7 +3,7 @@ require "spec_helper"
 describe "Cartoon Collections" do
   describe "#roll_call_dwarves" do
     it "prints out the 7 dwarfs in a numbered list" do
-      dwarves = ["Dopey", "Grumpy", "Bashful"]
+      dwarves = ["Dopey", "Grumpy", "Bashful","Sleepy"]
 
       output = capture_stdout do
         roll_call_dwarves(dwarves)
@@ -14,7 +14,14 @@ describe "Cartoon Collections" do
       expect(output).to match(/1.*Dopey/)
       expect(output).to match(/2.*Grumpy/)
       expect(output).to match(/3.*Bashful/)
+      expect(output).to match(/4 *Sleepy/)
     end
+    
+    dwarves=[o,1,2,3,4].each_with_index { |val,index| puts "index: #{index} for #{val}" if val < 10}
+  index: 0 for 10
+  index: 1 for 4
+  => [0,1,2,3,4]
+
   end
 
   describe "#summon_captain_planet" do
@@ -25,6 +32,13 @@ describe "Cartoon Collections" do
       expect(result.length).to eq(3)
     end
 
+summon_captain_planet_calls= ["carrot", "cucumber", "pepper"]
+  summon_captain_planet_calls(planet_calls)#=>[ ["carrot", "cucumber", "pepper"]]
+   
+   def summon_captain_planet_calls
+     summon_captain_planet_calls(planet_calls[ ["carrot", "cucumber", "pepper"| ]).collect{|n|}
+     #=> ["carrot", "cucumber", "pepper"]
+   
     it "capitalizes each element and adds an exclamation mark (test 1)" do
       fruits = ["apple", "banana", "orange"]
       result = summon_captain_planet(fruits)
@@ -40,9 +54,29 @@ describe "Cartoon Collections" do
 
   describe "#long_planeteer_calls" do
     it "returns true if any calls are longer than 4 characters" do
-      calls_long = ["axe", "earth", "wind", "fire"]
+      calls_long = [short_words = ["puff", "go", "two"]
+long_planeteer_calls(short_words)
+#=> false
+ 
+assorted_words = ["two", "go", "industrious", "bop"]
+long_planeteer_calls(assorted_words)
+#=> true]
       expect(long_planeteer_calls(calls_long)).to eq(true)
     end
+    
+    short_words = [short_words = ["puff", "go", "two"]
+long_planeteer_calls(short_words)
+#=> false
+ 
+assorted_words = ["two", "go", "industrious", "bop"]
+long_planeteer_calls(assorted_words)
+#=> true]
+long_planeteer_calls(short_words)
+#=> false
+ 
+assorted_words = ["two", "go", "industrious", "bop"]
+long_planeteer_calls(assorted_words)
+#=> true
 
     it "returns false if all calls are 4 characters or less" do
       calls_short = ["wind", "fire", "tree", "axe", "code"]
