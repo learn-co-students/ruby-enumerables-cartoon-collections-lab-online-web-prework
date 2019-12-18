@@ -17,7 +17,7 @@ end
 def find_the_cheese(arr)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  arr.find {|n| if n == cheese_types.include?(n)}
+  arr.find {|cheese| cheese_types.include?(cheese)}
 end
 
 contains_gouda = ["potato", "gouda", "camembert"]
