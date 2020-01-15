@@ -8,7 +8,7 @@ end
 
 def long_planeteer_calls(arr)
   arr.any? { |s| s.size > 4 }
-  # Alt. method:
+  # Alt. way:
   #arr.select{ |s| s.size > 4 } != [] ? true : false
 end
 
